@@ -1,0 +1,42 @@
+{
+  "name": "promise-asap-proposal-polyfill",
+  "version": "0.0.0",
+  "description": "Polyfill for Promise.asap",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --require test/bootstrap-test.js",
+    "test:watch": "mocha --require test/bootstrap-test.js --watch",
+    "test:coverage": "istanbul cover _mocha -- -R min --require test/bootstrap-test.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asdf404/promise-asap-proposal-polyfill.git"
+  },
+  "keywords": [
+    "asap",
+    "polyfill",
+    "promise"
+  ],
+  "author": "Pavel Kilin <pavel@asdf404.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asdf404/promise-asap-proposal-polyfill/issues"
+  },
+  "homepage": "https://github.com/asdf404/promise-asap-proposal-polyfill#readme",
+  "engines": {
+    "node": ">4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "coveralls": "^2.11.16",
+    "eslint": "^3.15.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-mocha": "^4.8.0",
+    "eslint-plugin-promise": "^3.4.1",
+    "eslint-plugin-standard": "^2.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  }
+}
